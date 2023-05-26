@@ -3,10 +3,9 @@ import { db } from '@/lib/db'
 import Image from 'next/image'
 
 export default async function Home() {
-  await db.set("hello", "Harish");
   return (
     <div>
-        <Button>Click me</Button>
+        <Button variant = "ghost">Click me</Button>
     </div>
   )
 }
