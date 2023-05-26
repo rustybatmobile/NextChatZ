@@ -60,7 +60,9 @@ export const authOptions: NextAuthOptions = {
             return session;
         }, 
         // when the user signed in, have to redirect
-
+        redirect() {
+            return '/dashboard'
+        }
     },
 }
 
